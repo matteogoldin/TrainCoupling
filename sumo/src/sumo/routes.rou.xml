@@ -1,0 +1,27 @@
+<routes>
+	<vType id="my_rail_50m_max" priority="1" maxSpeed="27.78" vClass="rail" length="50" guiShape="rail" color="1,1,0"/>
+	<vType id="my_rail_50m_min" priority="1" maxSpeed="20.8" vClass="rail" length="50" guiShape="rail" color="1,1,0"/>
+	
+	<route id="routeINtoC" edges="INtoC"/>
+	<vehicle id="vFastINtoC_50m_max" depart="0" route="routeINtoC" type="my_rail_50m_max" departSpeed="27.78" arrivalSpeed="0"/>
+	<vehicle id="vSlowINtoC_50m_max" depart="500" route="routeINtoC" type="my_rail_50m_max" departSpeed="0" arrivalSpeed="0"/>
+	<vehicle id="vFastINtoC_50m_min" depart="1000" route="routeINtoC" type="my_rail_50m_min" departSpeed="20.8" arrivalSpeed="0"/>
+	<vehicle id="vSlowINtoC_50m_min" depart="1500" route="routeINtoC" type="my_rail_50m_min" departSpeed="0" arrivalSpeed="0"/>
+	
+	<route id="routeCtoD" edges="CtoD"/>
+	<vehicle id="vCtoD_50m_max" depart="5000" route="routeCtoD" type="my_rail_50m_max" departSpeed="0" arrivalSpeed="0"/>
+	<vehicle id="vCtoD_50m_min" depart="10000" route="routeCtoD" type="my_rail_50m_min" departSpeed="0" arrivalSpeed="0"/>
+	
+	
+	<route id="routeDtoOUT" edges="DtoOUT"/>
+	<vehicle id="vDtoOut_50m_max" depart="20000" route="routeDtoOUT" type="my_rail_50m_max" departSpeed="0" arrivalSpeed="current"/>
+	<vehicle id="vDtoOut_50m_min" depart="25000" route="routeDtoOUT" type="my_rail_50m_min" departSpeed="0" arrivalSpeed="current"/>
+	
+	
+	<route id="routeINtoOUT" edges="INtoC CtoD DtoOUT"/>
+	<vehicle id="vFastINtoOUT_50m_max" depart="30000" route="routeINtoOUT" type="my_rail_50m_max" departSpeed="27.78" arrivalSpeed="current"/>
+	<vehicle id="vSlowINtoOUT_50m_max" depart="35000" route="routeINtoOUT" type="my_rail_50m_max" departSpeed="0" arrivalSpeed="current"/>
+	<vehicle id="vFastINtoOUT_50m_min" depart="40000" route="routeINtoOUT" type="my_rail_50m_min" departSpeed="20.8" arrivalSpeed="current"/>
+	<vehicle id="vSlowINtoOUT_50m_min" depart="50000" route="routeINtoOUT" type="my_rail_50m_min" departSpeed="0" arrivalSpeed="current"/>
+	
+</routes>

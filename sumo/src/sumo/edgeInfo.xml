@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-04-14 16:59:10 by Eclipse SUMO sumo Version 1.16.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="tcNet.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+    </input>
+
+    <output>
+        <edgedata-output value="edgeInfo.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="10000"/>
+    </time>
+
+</configuration>
+-->
+
+<meandata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/meandata_file.xsd">
+    <interval begin="0.00" end="10000.00" id="DEFAULT_EDGEDATA">
+        <edge id="CtoD" sampledSeconds="1717.00" traveltime="1722.06" overlapTraveltime="1727.11" density="0.00" laneDensity="0.00" occupancy="0.05" waitingTime="0.00" timeLoss="66.00" speed="26.71" speedRelative="0.27" departed="1" arrived="1" entered="0" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="DtoOUT" sampledSeconds="133.00" traveltime="142.63" overlapTraveltime="152.26" density="0.01" laneDensity="0.01" occupancy="0.09" waitingTime="0.00" timeLoss="65.87" speed="14.02" speedRelative="0.14" departed="1" arrived="1" entered="0" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="INtoC" sampledSeconds="211.00" traveltime="113.14" overlapTraveltime="120.78" density="0.01" laneDensity="0.01" occupancy="0.14" waitingTime="0.00" timeLoss="76.74" speed="17.68" speedRelative="0.18" departed="2" arrived="2" entered="0" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+    </interval>
+</meandata>

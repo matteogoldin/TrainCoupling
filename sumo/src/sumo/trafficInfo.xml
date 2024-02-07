@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-05-22 15:56:16 by Eclipse SUMO sumo Version 1.16.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="tcNet.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="trafficInfo.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="100000"/>
+    </time>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="vFastINtoC_50m_max" depart="0.00" departLane="INtoC_0" departPos="50.10" departSpeed="27.78" departDelay="0.00" arrival="81.00" arrivalLane="INtoC_0" arrivalPos="2000.00" arrivalSpeed="0.48" duration="81.00" routeLength="1949.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="10.81" rerouteNo="0" devices="tripinfo_vFastINtoC_50m_max" vType="my_rail_50m_max" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="vSlowINtoC_50m_max" depart="500.00" departLane="INtoC_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="636.00" arrivalLane="INtoC_0" arrivalPos="2000.00" arrivalSpeed="0.56" duration="136.00" routeLength="1949.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="65.81" rerouteNo="0" devices="tripinfo_vSlowINtoC_50m_max" vType="my_rail_50m_max" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="vFastINtoC_50m_min" depart="1000.00" departLane="INtoC_0" departPos="50.10" departSpeed="20.80" departDelay="0.00" arrival="1102.00" arrivalLane="INtoC_0" arrivalPos="2000.00" arrivalSpeed="0.32" duration="102.00" routeLength="1949.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="8.26" rerouteNo="0" devices="tripinfo_vFastINtoC_50m_min" vType="my_rail_50m_min" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="vSlowINtoC_50m_min" depart="1500.00" departLane="INtoC_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="1643.00" arrivalLane="INtoC_0" arrivalPos="2000.00" arrivalSpeed="0.45" duration="143.00" routeLength="1949.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="49.26" rerouteNo="0" devices="tripinfo_vSlowINtoC_50m_min" vType="my_rail_50m_min" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="vCtoD_50m_max" depart="5000.00" departLane="CtoD_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="6720.00" arrivalLane="CtoD_0" arrivalPos="46000.00" arrivalSpeed="0.40" duration="1720.00" routeLength="45949.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="65.94" rerouteNo="0" devices="tripinfo_vCtoD_50m_max" vType="my_rail_50m_max" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="vCtoD_50m_min" depart="10000.00" departLane="CtoD_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="12258.00" arrivalLane="CtoD_0" arrivalPos="46000.00" arrivalSpeed="0.95" duration="2258.00" routeLength="45949.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="48.87" rerouteNo="0" devices="tripinfo_vCtoD_50m_min" vType="my_rail_50m_min" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="vDtoOut_50m_max" depart="20000.00" departLane="DtoOUT_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="20126.00" arrivalLane="DtoOUT_0" arrivalPos="2000.00" arrivalSpeed="27.78" duration="126.00" routeLength="1949.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="55.06" rerouteNo="0" devices="tripinfo_vDtoOut_50m_max" vType="my_rail_50m_max" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="vDtoOut_50m_min" depart="25000.00" departLane="DtoOUT_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="25135.00" arrivalLane="DtoOUT_0" arrivalPos="2000.00" arrivalSpeed="20.80" duration="135.00" routeLength="1949.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="41.10" rerouteNo="0" devices="tripinfo_vDtoOut_50m_min" vType="my_rail_50m_min" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="vFastINtoOUT_50m_max" depart="30000.00" departLane="INtoC_0" departPos="50.10" departSpeed="27.78" departDelay="0.00" arrival="31799.00" arrivalLane="DtoOUT_0" arrivalPos="2000.00" arrivalSpeed="27.78" duration="1799.00" routeLength="49950.10" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.00" rerouteNo="0" devices="tripinfo_vFastINtoOUT_50m_max" vType="my_rail_50m_max" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="vSlowINtoOUT_50m_max" depart="35000.00" departLane="INtoC_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="36854.00" arrivalLane="DtoOUT_0" arrivalPos="2000.00" arrivalSpeed="27.78" duration="1854.00" routeLength="49950.10" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="55.06" rerouteNo="0" devices="tripinfo_vSlowINtoOUT_50m_max" vType="my_rail_50m_max" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="vFastINtoOUT_50m_min" depart="40000.00" departLane="INtoC_0" departPos="50.10" departSpeed="20.80" departDelay="0.00" arrival="42402.00" arrivalLane="DtoOUT_0" arrivalPos="2000.00" arrivalSpeed="20.80" duration="2402.00" routeLength="49950.10" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.00" rerouteNo="0" devices="tripinfo_vFastINtoOUT_50m_min" vType="my_rail_50m_min" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="vSlowINtoOUT_50m_min" depart="50000.00" departLane="INtoC_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="52443.00" arrivalLane="DtoOUT_0" arrivalPos="2000.00" arrivalSpeed="20.80" duration="2443.00" routeLength="49950.10" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="41.10" rerouteNo="0" devices="tripinfo_vSlowINtoOUT_50m_min" vType="my_rail_50m_min" speedFactor="1.00" vaporized=""/>
+</tripinfos>

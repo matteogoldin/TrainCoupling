@@ -1,0 +1,5 @@
+<edges>
+	<edge from="IN" to="C" id="INtoC" type="edgeType1"/>
+	<edge from="C" to="D" id="CtoD" type="edgeType1"/>
+	<edge from="D" to="OUT" id="DtoOUT" type="edgeType1"/>
+</edges>

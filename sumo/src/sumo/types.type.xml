@@ -1,0 +1,5 @@
+<types>
+
+  <type id="edgeType1" priority="1" numLanes="1" speed="27.78"/>
+
+</types>

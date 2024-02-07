@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-04-13 16:56:23 by Eclipse SUMO netconvert Version 1.16.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="nodes.nod.xml"/>
+        <edge-files value="edges.edg.xml"/>
+        <type-files value="types.type.xml"/>
+    </input>
+
+    <output>
+        <output-file value="tcNet.net.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="25000.00,0.00" convBoundary="0.00,0.00,50000.00,0.00" origBoundary="-25000.00,0.00,25000.00,0.00" projParameter="!"/>
+
+    <type id="edgeType1" priority="1" numLanes="1" speed="100.00"/>
+
+    <edge id=":C_0" function="internal">
+        <lane id=":C_0_0" index="0" speed="100.00" length="0.10" shape="2000.00,-1.60 2000.00,-1.60"/>
+    </edge>
+    <edge id=":D_0" function="internal">
+        <lane id=":D_0_0" index="0" speed="100.00" length="0.10" shape="48000.00,-1.60 48000.00,-1.60"/>
+    </edge>
+
+    <edge id="CtoD" from="C" to="D" priority="1" type="edgeType1">
+        <lane id="CtoD_0" index="0" speed="100.00" length="46000.00" shape="2000.00,-1.60 48000.00,-1.60"/>
+    </edge>
+    <edge id="DtoOUT" from="D" to="OUT" priority="1" type="edgeType1">
+        <lane id="DtoOUT_0" index="0" speed="100.00" length="2000.00" shape="48000.00,-1.60 50000.00,-1.60"/>
+    </edge>
+    <edge id="INtoC" from="IN" to="C" priority="1" type="edgeType1">
+        <lane id="INtoC_0" index="0" speed="100.00" length="2000.00" shape="0.00,-1.60 2000.00,-1.60"/>
+    </edge>
+
+    <junction id="C" type="priority" x="2000.00" y="0.00" incLanes="INtoC_0" intLanes=":C_0_0" shape="2000.00,0.00 2000.00,-3.20 2000.00,0.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="D" type="priority" x="48000.00" y="0.00" incLanes="CtoD_0" intLanes=":D_0_0" shape="48000.00,0.00 48000.00,-3.20 48000.00,0.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="IN" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,0.00 0.00,-3.20"/>
+    <junction id="OUT" type="dead_end" x="50000.00" y="0.00" incLanes="DtoOUT_0" intLanes="" shape="50000.00,-3.20 50000.00,0.00"/>
+
+    <connection from="CtoD" to="DtoOUT" fromLane="0" toLane="0" via=":D_0_0" dir="s" state="M"/>
+    <connection from="INtoC" to="CtoD" fromLane="0" toLane="0" via=":C_0_0" dir="s" state="M"/>
+
+    <connection from=":C_0" to="CtoD" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":D_0" to="DtoOUT" fromLane="0" toLane="0" dir="s" state="M"/>
+
+</net>
